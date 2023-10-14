@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3C4BD802AD9F48D00A389CA /* HackGTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4BD7F2AD9F48D00A389CA /* HackGTApp.swift */; };
+		B3C4BD822AD9F48D00A389CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4BD812AD9F48D00A389CA /* ContentView.swift */; };
+		B3C4BD842AD9F49000A389CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C4BD832AD9F49000A389CA /* Assets.xcassets */; };
+		B3C4BD872AD9F49000A389CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C4BD862AD9F49000A389CA /* Preview Assets.xcassets */; };
+		B3C4BD912AD9F49000A389CA /* HackGTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4BD902AD9F49000A389CA /* HackGTTests.swift */; };
+		B3C4BD9B2AD9F49000A389CA /* HackGTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4BD9A2AD9F49000A389CA /* HackGTUITests.swift */; };
+		B3C4BD9D2AD9F49000A389CA /* HackGTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4BD9C2AD9F49000A389CA /* HackGTUITestsLaunchTests.swift */; };
+		B3F41B5E2ADA6CCB00894431 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F41B5D2ADA6CCB00894431 /* Colors.xcassets */; };
+		B3F41B622ADA7EF300894431 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F41B612ADA7EF300894431 /* HomeView.swift */; };
+		B3F41B652ADA80F600894431 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F41B642ADA80F500894431 /* LogView.swift */; };
+		B3F41B672ADA82B200894431 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F41B662ADA82B200894431 /* CustomTabBar.swift */; };
+		B3F41B692ADADC9B00894431 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F41B682ADADC9B00894431 /* ProfileView.swift */; };
+		B3F41B6B2ADADCCD00894431 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F41B6A2ADADCCD00894431 /* PromptView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3C4BD8D2AD9F49000A389CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3C4BD742AD9F48C00A389CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3C4BD7B2AD9F48C00A389CA;
+			remoteInfo = HackGT;
+		};
+		B3C4BD972AD9F49000A389CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3C4BD742AD9F48C00A389CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3C4BD7B2AD9F48C00A389CA;
+			remoteInfo = HackGT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3C4BD7C2AD9F48D00A389CA /* HackGT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackGT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C4BD7F2AD9F48D00A389CA /* HackGTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackGTApp.swift; sourceTree = "<group>"; };
+		B3C4BD812AD9F48D00A389CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3C4BD832AD9F49000A389CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3C4BD862AD9F49000A389CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3C4BD8C2AD9F49000A389CA /* HackGTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackGTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C4BD902AD9F49000A389CA /* HackGTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackGTTests.swift; sourceTree = "<group>"; };
+		B3C4BD962AD9F49000A389CA /* HackGTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackGTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C4BD9A2AD9F49000A389CA /* HackGTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackGTUITests.swift; sourceTree = "<group>"; };
+		B3C4BD9C2AD9F49000A389CA /* HackGTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackGTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B3F41B5D2ADA6CCB00894431 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		B3F41B612ADA7EF300894431 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B3F41B642ADA80F500894431 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		B3F41B662ADA82B200894431 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		B3F41B682ADADC9B00894431 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B3F41B6A2ADADCCD00894431 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3C4BD792AD9F48C00A389CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C4BD892AD9F49000A389CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C4BD932AD9F49000A389CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3C4BD732AD9F48C00A389CA = {
+			isa = PBXGroup;
+			children = (
+				B3C4BD7E2AD9F48D00A389CA /* HackGT */,
+				B3C4BD8F2AD9F49000A389CA /* HackGTTests */,
+				B3C4BD992AD9F49000A389CA /* HackGTUITests */,
+				B3C4BD7D2AD9F48D00A389CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3C4BD7D2AD9F48D00A389CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3C4BD7C2AD9F48D00A389CA /* HackGT.app */,
+				B3C4BD8C2AD9F49000A389CA /* HackGTTests.xctest */,
+				B3C4BD962AD9F49000A389CA /* HackGTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3C4BD7E2AD9F48D00A389CA /* HackGT */ = {
+			isa = PBXGroup;
+			children = (
+				B3F41B632ADA7FF600894431 /* Views */,
+				B3C4BD7F2AD9F48D00A389CA /* HackGTApp.swift */,
+				B3C4BD812AD9F48D00A389CA /* ContentView.swift */,
+				B3F41B662ADA82B200894431 /* CustomTabBar.swift */,
+				B3C4BD832AD9F49000A389CA /* Assets.xcassets */,
+				B3F41B5D2ADA6CCB00894431 /* Colors.xcassets */,
+				B3C4BD852AD9F49000A389CA /* Preview Content */,
+			);
+			path = HackGT;
+			sourceTree = "<group>";
+		};
+		B3C4BD852AD9F49000A389CA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B3C4BD862AD9F49000A389CA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3C4BD8F2AD9F49000A389CA /* HackGTTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3C4BD902AD9F49000A389CA /* HackGTTests.swift */,
+			);
+			path = HackGTTests;
+			sourceTree = "<group>";
+		};
+		B3C4BD992AD9F49000A389CA /* HackGTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B3C4BD9A2AD9F49000A389CA /* HackGTUITests.swift */,
+				B3C4BD9C2AD9F49000A389CA /* HackGTUITestsLaunchTests.swift */,
+			);
+			path = HackGTUITests;
+			sourceTree = "<group>";
+		};
+		B3F41B632ADA7FF600894431 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3F41B612ADA7EF300894431 /* HomeView.swift */,
+				B3F41B642ADA80F500894431 /* LogView.swift */,
+				B3F41B682ADADC9B00894431 /* ProfileView.swift */,
+				B3F41B6A2ADADCCD00894431 /* PromptView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3C4BD7B2AD9F48C00A389CA /* HackGT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3C4BDA02AD9F49000A389CA /* Build configuration list for PBXNativeTarget "HackGT" */;
+			buildPhases = (
+				B3C4BD782AD9F48C00A389CA /* Sources */,
+				B3C4BD792AD9F48C00A389CA /* Frameworks */,
+				B3C4BD7A2AD9F48C00A389CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackGT;
+			productName = HackGT;
+			productReference = B3C4BD7C2AD9F48D00A389CA /* HackGT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3C4BD8B2AD9F49000A389CA /* HackGTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3C4BDA32AD9F49000A389CA /* Build configuration list for PBXNativeTarget "HackGTTests" */;
+			buildPhases = (
+				B3C4BD882AD9F49000A389CA /* Sources */,
+				B3C4BD892AD9F49000A389CA /* Frameworks */,
+				B3C4BD8A2AD9F49000A389CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3C4BD8E2AD9F49000A389CA /* PBXTargetDependency */,
+			);
+			name = HackGTTests;
+			productName = HackGTTests;
+			productReference = B3C4BD8C2AD9F49000A389CA /* HackGTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B3C4BD952AD9F49000A389CA /* HackGTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3C4BDA62AD9F49000A389CA /* Build configuration list for PBXNativeTarget "HackGTUITests" */;
+			buildPhases = (
+				B3C4BD922AD9F49000A389CA /* Sources */,
+				B3C4BD932AD9F49000A389CA /* Frameworks */,
+				B3C4BD942AD9F49000A389CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3C4BD982AD9F49000A389CA /* PBXTargetDependency */,
+			);
+			name = HackGTUITests;
+			productName = HackGTUITests;
+			productReference = B3C4BD962AD9F49000A389CA /* HackGTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3C4BD742AD9F48C00A389CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B3C4BD7B2AD9F48C00A389CA = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B3C4BD8B2AD9F49000A389CA = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B3C4BD7B2AD9F48C00A389CA;
+					};
+					B3C4BD952AD9F49000A389CA = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B3C4BD7B2AD9F48C00A389CA;
+					};
+				};
+			};
+			buildConfigurationList = B3C4BD772AD9F48C00A389CA /* Build configuration list for PBXProject "HackGT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3C4BD732AD9F48C00A389CA;
+			productRefGroup = B3C4BD7D2AD9F48D00A389CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3C4BD7B2AD9F48C00A389CA /* HackGT */,
+				B3C4BD8B2AD9F49000A389CA /* HackGTTests */,
+				B3C4BD952AD9F49000A389CA /* HackGTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3C4BD7A2AD9F48C00A389CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F41B5E2ADA6CCB00894431 /* Colors.xcassets in Resources */,
+				B3C4BD872AD9F49000A389CA /* Preview Assets.xcassets in Resources */,
+				B3C4BD842AD9F49000A389CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C4BD8A2AD9F49000A389CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C4BD942AD9F49000A389CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3C4BD782AD9F48C00A389CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F41B6B2ADADCCD00894431 /* PromptView.swift in Sources */,
+				B3C4BD822AD9F48D00A389CA /* ContentView.swift in Sources */,
+				B3F41B672ADA82B200894431 /* CustomTabBar.swift in Sources */,
+				B3F41B652ADA80F600894431 /* LogView.swift in Sources */,
+				B3C4BD802AD9F48D00A389CA /* HackGTApp.swift in Sources */,
+				B3F41B692ADADC9B00894431 /* ProfileView.swift in Sources */,
+				B3F41B622ADA7EF300894431 /* HomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C4BD882AD9F49000A389CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C4BD912AD9F49000A389CA /* HackGTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C4BD922AD9F49000A389CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C4BD9D2AD9F49000A389CA /* HackGTUITestsLaunchTests.swift in Sources */,
+				B3C4BD9B2AD9F49000A389CA /* HackGTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3C4BD8E2AD9F49000A389CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3C4BD7B2AD9F48C00A389CA /* HackGT */;
+			targetProxy = B3C4BD8D2AD9F49000A389CA /* PBXContainerItemProxy */;
+		};
+		B3C4BD982AD9F49000A389CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3C4BD7B2AD9F48C00A389CA /* HackGT */;
+			targetProxy = B3C4BD972AD9F49000A389CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B3C4BD9E2AD9F49000A389CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3C4BD9F2AD9F49000A389CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3C4BDA12AD9F49000A389CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HackGT/Preview Content\"";
+				DEVELOPMENT_TEAM = 9N8MA7V3HS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.HackGT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3C4BDA22AD9F49000A389CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HackGT/Preview Content\"";
+				DEVELOPMENT_TEAM = 9N8MA7V3HS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.HackGT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3C4BDA42AD9F49000A389CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N8MA7V3HS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.HackGTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackGT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HackGT";
+			};
+			name = Debug;
+		};
+		B3C4BDA52AD9F49000A389CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N8MA7V3HS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.HackGTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackGT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HackGT";
+			};
+			name = Release;
+		};
+		B3C4BDA72AD9F49000A389CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N8MA7V3HS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.HackGTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HackGT;
+			};
+			name = Debug;
+		};
+		B3C4BDA82AD9F49000A389CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N8MA7V3HS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.HackGTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HackGT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3C4BD772AD9F48C00A389CA /* Build configuration list for PBXProject "HackGT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C4BD9E2AD9F49000A389CA /* Debug */,
+				B3C4BD9F2AD9F49000A389CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3C4BDA02AD9F49000A389CA /* Build configuration list for PBXNativeTarget "HackGT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C4BDA12AD9F49000A389CA /* Debug */,
+				B3C4BDA22AD9F49000A389CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3C4BDA32AD9F49000A389CA /* Build configuration list for PBXNativeTarget "HackGTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C4BDA42AD9F49000A389CA /* Debug */,
+				B3C4BDA52AD9F49000A389CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3C4BDA62AD9F49000A389CA /* Build configuration list for PBXNativeTarget "HackGTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C4BDA72AD9F49000A389CA /* Debug */,
+				B3C4BDA82AD9F49000A389CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3C4BD742AD9F48C00A389CA /* Project object */;
+}
