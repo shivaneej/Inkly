@@ -42,5 +42,7 @@ def process():
     question = response.content if response else "No question extracted"
     return jsonify(extracted_data=question)
 
+application = app
+
 if __name__ == '__main__':
     app.run(debug=True)
