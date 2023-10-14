@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" -d @input.json https://llming-395a5afa1bb5.herokuapp.com/process
