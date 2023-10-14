@@ -1,5 +1,5 @@
-title: Slate theme
-description: Slate is a theme for GitHub Pages.
-show_downloads: true
+title: Inkly
+description: The app to pour your heart out
+show_downloads: False
 google_analytics:
 theme: jekyll-theme-slate
