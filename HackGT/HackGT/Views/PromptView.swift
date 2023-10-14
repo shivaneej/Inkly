@@ -12,56 +12,39 @@ struct Prompt {
 }
 
 struct PromptView: View {
-    @State var prompt1 = "Prompt 1"
-    @State var prompt2 = "Prompt 2"
-    @State var prompt3 = "Prompt 3"
+    @State var prompt1: String = "This is a longer prompt that will make users think more about what they really want to write about."
+    @State var prompt2: String = "Prompt2"
+    @State var prompt3: String = "What happens if prompts get way too long and they start to go off the screne because the AI generated an essay instead of a sentence. This is a longer prompt that will make users think more about what they really want to write about."
     
     
     var body: some View {
-        VStack {
+        ZStack {
             
-            ZStack {
-                Color(CustomColor.bg)
-                    .ignoresSafeArea()
+            Color(CustomColor.bg)
+                .ignoresSafeArea()
+            
+            VStack {
+                Text("Need a prompt to get you started?")
+                    .font(.title)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(CustomColor.t1)
                 
-                VStack {
-                    Text(prompt1)
-                        .padding()
-                        .background(CustomColor.t2)
-                        .cornerRadius(12)
-                        .font(.title)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(CustomColor.t1)
-                    
-                    Text(prompt2)
-                        .padding()
-                        .background(CustomColor.t2)
-                        .cornerRadius(12)
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(CustomColor.t1)
-                    
-                    Text(prompt3)
-                        .padding()
-                        .background(CustomColor.t2)
-                        .cornerRadius(12)
-                        .font(.title)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(CustomColor.t1)
-                        
-                        
-                                    
+                ScrollView {
+                    VStack(spacing: 20) {
+                        PromptCard(prompt: prompt1)
+                        PromptCard(prompt: prompt2)
+                        PromptCard(prompt: prompt3)
+                        Spacer()
+                    }
+                    .padding()
                 }
             }
             
+            
         }
-        
     }
 }
 
 #Preview {
     PromptView()
 }
-
-
-//.padding()

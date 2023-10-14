@@ -20,6 +20,7 @@
 		B3F41B672ADA82B200894431 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F41B662ADA82B200894431 /* CustomTabBar.swift */; };
 		B3F41B692ADADC9B00894431 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F41B682ADADC9B00894431 /* ProfileView.swift */; };
 		B3F41B6B2ADADCCD00894431 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F41B6A2ADADCCD00894431 /* PromptView.swift */; };
+		B3F41B6D2ADAFF5E00894431 /* PromptCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F41B6C2ADAFF5E00894431 /* PromptCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		B3F41B662ADA82B200894431 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		B3F41B682ADADC9B00894431 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B3F41B6A2ADADCCD00894431 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
+		B3F41B6C2ADAFF5E00894431 /* PromptCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				B3C4BD7F2AD9F48D00A389CA /* HackGTApp.swift */,
 				B3C4BD812AD9F48D00A389CA /* ContentView.swift */,
 				B3F41B662ADA82B200894431 /* CustomTabBar.swift */,
+				B3F41B6C2ADAFF5E00894431 /* PromptCard.swift */,
 				B3C4BD832AD9F49000A389CA /* Assets.xcassets */,
 				B3F41B5D2ADA6CCB00894431 /* Colors.xcassets */,
 				B3C4BD852AD9F49000A389CA /* Preview Content */,
@@ -291,6 +294,7 @@
 				B3C4BD802AD9F48D00A389CA /* HackGTApp.swift in Sources */,
 				B3F41B692ADADC9B00894431 /* ProfileView.swift in Sources */,
 				B3F41B622ADA7EF300894431 /* HomeView.swift in Sources */,
+				B3F41B6D2ADAFF5E00894431 /* PromptCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
