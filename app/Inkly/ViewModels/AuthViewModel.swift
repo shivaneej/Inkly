@@ -51,4 +51,13 @@ class AuthViewModel: ObservableObject {
             
         }
     }
+    func getDisplayName(completion: @escaping (String?) -> Void) {
+            guard let user = Auth.auth().currentUser else {
+                completion(nil)
+                return
+            }
+            
+            let displayName = user.displayName
+            completion(displayName)
+        }
 }
