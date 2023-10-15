@@ -6,18 +6,20 @@
 //
 
 
+
+
 import SwiftUI
 
 struct CustomColor {
-    static let bg = Color("Background")
+    static let bg = Color("background")
     static let t1 = Color("TextPrimary")
     static let t2 = Color("TextSecondary")
 }
 
 @MainActor class Prompt: ObservableObject {
     @Published var value = "What's on your mind today..."
+    @Published var key = "key"
 }
-
 
 struct ContentView: View {
     @State private var selectedTab: Tab = .book
@@ -29,13 +31,14 @@ struct ContentView: View {
     }
 
     var body: some View {
+        
         ZStack {
             TabView(selection: $selectedTab) {
                 switch selectedTab {
                 case .person:
                     ProfileView()
                 case .book:
-                    HomeView(promptValue: $currentPrompt.value)
+                    HomeView()
                 case .pencil:
                     PromptView(selectedTab: $selectedTab)
                 case .envelope:
@@ -47,13 +50,13 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 CustomTabBar(selectedTab: $selectedTab)
+                
             }
         }
-        
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(AuthViewModel())
 }
-

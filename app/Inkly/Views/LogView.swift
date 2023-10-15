@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct LogView: View {
+    @ObservedObject var viewModel = ReadViewModel()
+    @EnvironmentObject var authViewModel: AuthViewModel
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(viewModel.dateEntries) { dateEntry in
+                Section(header: Text(dateEntry.id)) {  // Using date as section header
+                    ForEach(dateEntry.prompts) { prompt in
+                        DisclosureGroup(prompt.question) {
+                            Text(prompt.answer)
+                        }
+                    }
+                }
+            }
+        }
+        .onAppear {
+            if let uid = authViewModel.user?.uid {
+                viewModel.readDataFromDatabase(uid: uid) { }
+            }
+        }
     }
 }
 
