@@ -1,42 +1,39 @@
-### What is the app about?
-- This is simplistic journaling that is mainly focused on making journaling habit-forming.
+### What is the App About?
+- A journaling app designed to build and maintain the habit of journaling with a focus on mental health.
 
-### What is the motivation behind the app?
-- Quite often, we are not able to keep up with the journaling habit.
-- This app is mainly focused on making journaling habit-forming.
-- It is focused on making it easy to do a brain dump, to recall if you had something important about the previous day that you want to keep track of etc
-- It is focused on keeping on track by adding a social element to it, you get to poke your friends to remind them to journal.
+### Motivation
+- Aims to make journaling habit-forming and simplify the process of mental unloading. 
+- Adds a social element by allowing you to keep track of and remind friends to journal.
 
-### Main focus
-- Mental health 
-- Creating a habit building journaling 
-- Making it easy to keep track of your friends and their journaling habits
+### Main Focus
+- Mental Health
+- Habit Formation
+- Social Engagement
 
 ### Features
-- Streaks - to keep track of your journaling streaks
-- Friend - to keep track of your friends and their journaling streaks
-- Sticks - to poke your friends to remind them to journal, to send them affirmations and cute stickers to cheer them up
+- **Streaks**: Track your journaling streaks.
+- **Friend**: Monitor your friends' journaling habits.
+- **Sticks**: Poke friends to remind them to journal and send stickers.
 
-### Future scope
-- using llm to predict the mood of the user through the days
-- cleanup stickers gradaully from your profile
+### Future Scope
+- Implement LLM to predict user mood over time.
+- Allow gradual removal of stickers from profiles.
 
+### Architecture
+- Built with Swift UI, backend on Firebase.
+- Authentication via Firebase Authentication.
+- Utilizes Langchain and GPT-3.5 Turbo for dynamic journaling prompts.
+- Backend hosted on Heroku.
 
-### Architecture of the app
-- The app is built on Swift UI and uses Firebase as the backend
-- We have used Firebase Authentication to authenticate the users
-- We use Langchain and GPT3.5 turbo to generate prompt depending on the previous days journal entry
-- We use Heroku to host the backend
-
-### Techs used
-- Firebase auth 
-- Firebase firestore
+### Technologies Used
+- Firebase Auth
+- Firebase Firestore
 - Swift UI
 - Langchain
 - Heroku
 
-
 ### Demos
+(TBD)
 
 ### Contributors
 - Jaiswal, Shivanee (sjaiswal45@gatech.edu)
