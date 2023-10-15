@@ -9,75 +9,89 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
-    @State private var mainText = ""
-//    @State private var prompt = "What's on your mind today"
-    @State private var promptKey = "prompt1"
-    
-    
     @EnvironmentObject var prompt: Prompt
-    @Binding var promptValue: String // TODO: Check if this can be deleted
+
+    @State private var mainText = ""
+    @State private var isShowingAlert = false
+    
     
     var body: some View {
         
         let uid = (authViewModel.user?.uid ?? "") as String
+        let userName = (authViewModel.user?.displayName ?? "") as String
+        let firstName = (userName != "" ? userName.split(separator: " ", maxSplits: 1)[0] : "User")
         
         ZStack {
-//            Color(CustomColor.bg)
+
             Color("background")
                 .ignoresSafeArea()
-            
-            VStack {
-                HStack{
+
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Hello, " + firstName)
+                        .font(.title)
+                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(CustomColor.t1)
+
                     Spacer()
-                    Text(prompt.value)
+                    Button {
+                        // Add action for "Done" button here
+                        isShowingAlert = true
+                        DataPost(mainText: mainText, prompt: prompt, uid: uid)
+                    } label: {
+                        ZStack {
+                            Text("Done")
+                                .foregroundColor(CustomColor.t1) // Text color
+                                .font(.headline)
+
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(CustomColor.t1, lineWidth: 2) // Border color and width
+                                .frame(width: 70, height: 30) // Adjust the height as needed
+                        }
+                    }
+                    .alert("Journal Entry Submitted!", isPresented: $isShowingAlert) {
+                        Button("Okay") {} // KEEP THIS {} HERE
+                    }
+                    .padding(.trailing, 20)
+                }
+                .padding([.top, .leading, .trailing])
+
+                Text(prompt.value)
+                    .font(.subheadline)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(CustomColor.t1)
+                    .padding([.leading, .bottom, .trailing])
+
+                HStack {
+                    Text(Date.now, format: .dateTime.month(.wide).day().year())
                         .font(.subheadline)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .foregroundColor(CustomColor.t1)
-                        .padding(.top, 20.0)
-                    
-                    Spacer() // Add pace to push the "Done" button to the right
-                    Button(action: {
-                        // Add action for "Done" button here
-                        DataPost(mainText: mainText, prompt: prompt.value, promptKey: promptKey, uid: uid)
-                    }) {
-                        ZStack {
-                                Text("Done")
-                                    .foregroundColor(CustomColor.t1) // Text color
-                                    .font(.headline)
-                                
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(CustomColor.t1, lineWidth: 2) // Border color and width
-                                    .frame(width: 70, height: 30) // Adjust the height as needed
-                            }.padding(.trailing, 10)
-                    }
-                        
+
+                    Spacer()
                 }
-                
-                Text(Date.now, format: .dateTime.month(.wide).day().year())
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(CustomColor.t1)
+                .padding(.horizontal)
+                .padding(.bottom, -10)
+
+                CustomTextEditor.init(placeholder:"Begin writing your entry here", text: $mainText)
                     .font(.subheadline)
-                
-                // TODO replace text with what was allready written if user leaves app
-                CustomTextEditor.init(placeholder:"Enter here", text: $mainText)
                     .scrollContentBackground(.hidden)
-                    .foregroundColor(CustomColor.t2)
-                    .padding([.leading, .bottom, .trailing])
-                                
+                    .foregroundColor(CustomColor.t1)
+                    .padding(.top, -5)
+                    .padding([.leading, .bottom, .trailing], 6)
+
             }
         }
     }
 }
 
-func SubmitEntry(entry: String) {
-    // TODO submit entry to log when day changes (so at midnight?)
-}
 
-func DataPost(mainText: String, prompt: String, promptKey: String, uid: String){
+
+
+
+@MainActor func DataPost(mainText: String, prompt: Prompt, uid: String){
     let viewModel = WriteViewModel()
-//    let uid = "TqbRkGwH6eQ7kqq85WV1Hemm7bQ4"
-    
-    viewModel.pushDataToDatabase(mainText, Date.now, uid, prompt, promptKey)
+    viewModel.pushDataToDatabase(mainText, Date.now, uid, prompt.value, prompt.key)
 }
 
 struct CustomTextEditor: View{
@@ -89,7 +103,8 @@ struct CustomTextEditor: View{
         ZStack (alignment: .topLeading) {
             if text.isEmpty{
                 Text(placeholder)
-                    .foregroundColor (Color.primary.opacity(0.25))
+//                    .foregroundColor (Color.primary.opacity(0.25))
+                    .foregroundColor (CustomColor.t1.opacity(0.3))
                     .padding(EdgeInsets(top: 7, leading: 4, bottom: 0, trailing: 0))
                     .padding(internalPadding)
                 }
@@ -105,4 +120,6 @@ struct CustomTextEditor: View{
 
 //#Preview {
 //    HomeView()
+//        .environmentObject(AuthViewModel())
+//        .environmentObject(Prompt())
 //}

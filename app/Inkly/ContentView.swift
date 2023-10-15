@@ -18,6 +18,7 @@ struct CustomColor {
 
 @MainActor class Prompt: ObservableObject {
     @Published var value = "What's on your mind today..."
+    @Published var key = "prompt1"
 }
 
 struct ContentView: View {
@@ -37,7 +38,7 @@ struct ContentView: View {
                 case .person:
                     ProfileView()
                 case .book:
-                    HomeView(promptValue: $currentPrompt.value)
+                    HomeView()
                 case .pencil:
                     PromptView(selectedTab: $selectedTab)
 //                case .envelope:

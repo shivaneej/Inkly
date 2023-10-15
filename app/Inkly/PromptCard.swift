@@ -10,23 +10,25 @@ import Foundation
 
 struct PromptCard: View {
     let prompt: String
+    let color: Color
     
     var body: some View {
         Text(prompt)
-            .font(.title2)
+            .font(.title3)
             .frame(maxWidth: .infinity)
             .padding()
-            .background(CustomColor.t2)
+            .background(color)
             .cornerRadius(12)
             .overlay(
                 RoundedRectangle(cornerRadius: 12)
-                    .stroke(CustomColor.t1, lineWidth: 3)
+                    .stroke(CustomColor.t1, lineWidth: 2)
             )
             .foregroundColor(CustomColor.t1)
+            .shadow(radius: 10)
     }
     
 }
 
 #Preview {
-    PromptCard(prompt: "Hello")
+    PromptCard(prompt: "Hello", color: .blue)
 }

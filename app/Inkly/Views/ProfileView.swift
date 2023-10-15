@@ -16,6 +16,12 @@ struct ProfileView: View {
     
     @State private var streakCount: Int = 0
     @State private var numEntries: Int = 0
+    
+    init() {
+        UITableView.appearance().backgroundColor = UIColor(Color("background"))
+        UITableView.appearance().tintColor = UIColor(Color("TextPrimary"))
+        
+    }
 
     var body: some View {
         let user = authViewModel.user
@@ -25,11 +31,14 @@ struct ProfileView: View {
         NavigationView {
             ZStack {
                 Color("background")
+                    .ignoresSafeArea()
+                
                 VStack {
                     ZStack {
                         Rectangle()
                             .frame(height: 0.25 * UIScreen.main.bounds.height)
                             .foregroundColor(Color("journalBrown"))
+                            .ignoresSafeArea()
                         URLImage(URL(string: photoURL?.absoluteString ?? "https://picsum.photos/id/237/200/300")!) { image in
                             image
                                 .resizable()
@@ -100,7 +109,7 @@ struct ProfileView: View {
                             // Call the function when the view appears
                             fetchUserStats()
             }
-        }
+            }
 
             
         }
@@ -121,4 +130,5 @@ struct ProfileView: View {
 
 #Preview {
     ProfileView()
+        .environmentObject(AuthViewModel())
 }

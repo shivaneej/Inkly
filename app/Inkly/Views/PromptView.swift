@@ -81,56 +81,59 @@ struct PromptView: View {
     var body: some View {
         ZStack {
             
-//            Color(CustomColor.bg)
             Color("background")
                 .ignoresSafeArea()
             
             VStack {
-                    Text("Need a prompt to get you started?")
-                        .font(.title)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(CustomColor.t1)
+                Text("Need a prompt to get you started?")
+                    .font(.title)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(CustomColor.t1)
+                    .padding(.bottom)
 
-                    VStack(spacing: 20) {
-                        Button {
-                            prompt.value = prompt1
-                            withAnimation(.easeIn(duration: 0.1)) {
-                                selectedTab = .book
-                            }
-                        } label: {
-                            PromptCard(prompt: prompt1)
+                VStack(spacing: 25) {
+                    Button {
+                        prompt.value = prompt1
+                        prompt.key = "prompt1"
+                        withAnimation(.easeIn(duration: 0.1)) {
+                            selectedTab = .book
                         }
-
-                        Button {
-                            prompt.value = prompt2
-                            withAnimation(.easeIn(duration: 0.1)) {
-                                selectedTab = .book
-                            }
-                        } label: {
-                            PromptCard(prompt: prompt2)
-                        }
-
-                        Button {
-                            prompt.value = prompt3
-                            withAnimation(.easeIn(duration: 0.1)) {
-                                selectedTab = .book
-                            }
-                        } label: {
-                            PromptCard(prompt: prompt3)
-                        }
-
-                        Spacer()
+                    } label: {
+                        PromptCard(prompt: prompt1, color: Color(red: 0.8745098039215686, green: 0.8156862745098039, blue: 0.7764705882352941))
                     }
-                }
-                .padding()
-            }
-        .onAppear {
-                    fetchData()
-                    
-                }
 
+                    Button {
+                        prompt.value = prompt2
+                        prompt.key = "prompt2"
+                        withAnimation(.easeIn(duration: 0.1)) {
+                            selectedTab = .book
+                        }
+                    } label: {
+                        PromptCard(prompt: prompt2, color: Color(red: 0.7568627450980392, green: 0.7058823529411765, blue: 0.6745098039215687))
+                    }
+
+                    Button {
+                        prompt.value = prompt3
+                        prompt.key = "prompt3"
+                        withAnimation(.easeIn(duration: 0.1)) {
+                            selectedTab = .book
+                        }
+                    } label: {
+                        PromptCard(prompt: prompt3, color: CustomColor.t2)
+                    }
+
+                    Spacer()
                 }
             }
+            .padding()
+        }
+        .onAppear {
+            fetchData()
+                    
+        }
+
+    }
+}
 
 //            #Preview {
 //                PromptView(selectedTab: .constant(.pencil))
