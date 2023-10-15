@@ -23,6 +23,7 @@ struct DateEntry: Identifiable {
 class ReadViewModel: ObservableObject{
     
     @Published var dateEntries: [DateEntry] = []
+    
     private let ref = Database.database().reference()
     
     
@@ -85,6 +86,27 @@ class ReadViewModel: ObservableObject{
             
             if let statsData = snapshot.value as? [String: Any] {
                 completion(statsData)
+            } else {
+                completion(nil)
+            }
+        }
+    }
+    
+    func fetchLatestEntry(for uid: String, completion: @escaping (String?) -> Void) {
+        let dailyEntriesRef = ref.child("users").child(uid).child("dailyEntries")
+        
+        dailyEntriesRef.observeSingleEvent(of: .value) { snapshot in
+            guard let entries = snapshot.value as? [String: [String: [String: String]]] else {
+                completion(nil)
+                return
+            }
+            
+            let latestDate = entries.keys.sorted().last
+            if let date = latestDate, let prompts = entries[date] {
+                let prompt1Answer = prompts["prompt1"]?["answer"] ?? ""
+                let prompt2Answer = prompts["prompt2"]?["answer"] ?? ""
+                let combined = prompt1Answer + " " + prompt2Answer
+                completion(combined)
             } else {
                 completion(nil)
             }
