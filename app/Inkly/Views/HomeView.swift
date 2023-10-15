@@ -10,8 +10,12 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
     @State private var mainText = ""
-    @State private var prompt = "What's on your mind today"
+//    @State private var prompt = "What's on your mind today"
     @State private var promptKey = "prompt1"
+    
+    
+    @EnvironmentObject var prompt: Prompt
+    @Binding var promptValue: String // TODO: Check if this can be deleted
     
     var body: some View {
         
@@ -19,13 +23,13 @@ struct HomeView: View {
         
         ZStack {
 //            Color(CustomColor.bg)
-            Color("journalBeige")
+            Color("background")
                 .ignoresSafeArea()
             
             VStack {
                 HStack{
                     Spacer()
-                    Text(prompt)
+                    Text(prompt.value)
                         .font(.subheadline)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .foregroundColor(CustomColor.t1)
@@ -34,7 +38,7 @@ struct HomeView: View {
                     Spacer() // Add pace to push the "Done" button to the right
                     Button(action: {
                         // Add action for "Done" button here
-                        DataPost(mainText: mainText, prompt: prompt, promptKey: promptKey, uid: uid)
+                        DataPost(mainText: mainText, prompt: prompt.value, promptKey: promptKey, uid: uid)
                     }) {
                         ZStack {
                                 Text("Done")
@@ -57,7 +61,7 @@ struct HomeView: View {
                 // TODO replace text with what was allready written if user leaves app
                 CustomTextEditor.init(placeholder:"Enter here", text: $mainText)
                     .scrollContentBackground(.hidden)
-                    .foregroundColor(CustomColor.t1)
+                    .foregroundColor(CustomColor.t2)
                     .padding([.leading, .bottom, .trailing])
                                 
             }
@@ -99,6 +103,6 @@ struct CustomTextEditor: View{
     }
 }
 
-#Preview {
-    HomeView()
-}
+//#Preview {
+//    HomeView()
+//}
