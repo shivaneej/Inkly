@@ -41,11 +41,7 @@ class AuthViewModel: ObservableObject {
                 
                 guard let user = res?.user else { return }
                 self.user = user
-                self.isSignedIn = true
-                print(user.displayName)
-//                print(user.email)
-//                print(user.photoURL)
-                
+                self.isSignedIn = true                
             }
             
             

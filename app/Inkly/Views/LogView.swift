@@ -12,20 +12,23 @@ struct LogView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
 
     var body: some View {
-        List {
-            ForEach(viewModel.dateEntries) { dateEntry in
-                Section(header: Text(dateEntry.id)) {  // Using date as section header
-                    ForEach(dateEntry.prompts) { prompt in
-                        DisclosureGroup(prompt.question) {
-                            Text(prompt.answer)
+        ZStack {
+            List {
+                ForEach(viewModel.dateEntries) { dateEntry in
+                    Section(header: Text(dateEntry.id)) {  // Using date as section header
+                        ForEach(dateEntry.prompts) { prompt in
+                            DisclosureGroup(prompt.question) {
+                                Text(prompt.answer)
+                                    .foregroundColor(Color("TextPrimary"))
+                            }
                         }
                     }
                 }
             }
-        }
-        .onAppear {
-            if let uid = authViewModel.user?.uid {
-                viewModel.readDataFromDatabase(uid: uid) { }
+            .onAppear {
+                if let uid = authViewModel.user?.uid {
+                    viewModel.readDataFromDatabase(uid: uid) { }
+                }
             }
         }
     }
