@@ -109,7 +109,7 @@ struct ProfileView: View {
                             // Call the function when the view appears
                             fetchUserStats()
             }
-        }
+            }
 
             
         }

@@ -103,7 +103,8 @@ struct CustomTextEditor: View{
         ZStack (alignment: .topLeading) {
             if text.isEmpty{
                 Text(placeholder)
-                    .foregroundColor (Color.primary.opacity(0.25))
+//                    .foregroundColor (Color.primary.opacity(0.25))
+                    .foregroundColor (CustomColor.t1.opacity(0.3))
                     .padding(EdgeInsets(top: 7, leading: 4, bottom: 0, trailing: 0))
                     .padding(internalPadding)
                 }

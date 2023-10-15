@@ -18,7 +18,7 @@ struct CustomColor {
 
 @MainActor class Prompt: ObservableObject {
     @Published var value = "What's on your mind today..."
-    @Published var key = "key"
+    @Published var key = "prompt1"
 }
 
 struct ContentView: View {
