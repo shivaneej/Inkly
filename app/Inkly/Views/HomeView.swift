@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
-    
+    @EnvironmentObject var authViewModel: AuthViewModel
     @State private var mainText = ""
     @State private var prompt = "What's on your mind today"
     @State private var promptKey = "prompt1"
     
     var body: some View {
+        
+        let uid = (authViewModel.user?.uid ?? "") as String
+        
         ZStack {
 //            Color(CustomColor.bg)
             Color("journalBeige")
@@ -31,7 +34,7 @@ struct HomeView: View {
                     Spacer() // Add pace to push the "Done" button to the right
                     Button(action: {
                         // Add action for "Done" button here
-                        DataPost(mainText: mainText, prompt: prompt, promptKey: promptKey)
+                        DataPost(mainText: mainText, prompt: prompt, promptKey: promptKey, uid: uid)
                     }) {
                         ZStack {
                                 Text("Done")
@@ -66,9 +69,9 @@ func SubmitEntry(entry: String) {
     // TODO submit entry to log when day changes (so at midnight?)
 }
 
-func DataPost(mainText: String, prompt: String, promptKey: String){
+func DataPost(mainText: String, prompt: String, promptKey: String, uid: String){
     let viewModel = WriteViewModel()
-    let uid = "TqbRkGwH6eQ7kqq85WV1Hemm7bQ4"
+//    let uid = "TqbRkGwH6eQ7kqq85WV1Hemm7bQ4"
     
     viewModel.pushDataToDatabase(mainText, Date.now, uid, prompt, promptKey)
 }
