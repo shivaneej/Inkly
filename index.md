@@ -12,6 +12,7 @@
 
 ### Features
 - **Streaks**: Track your journaling streaks for positive reinforcement.
+- **Friends**: Add friends to keep track of their journaling. You can also send them stickers to remind them to journal.
 - **Stickers**: Send stickers to friends to remind them to journal. Custom stickers will be available as a premium feature, but pre-designed stickers are available to all users.
 
 ### Future Scope
@@ -29,6 +30,7 @@
 - Firebase Auth
 - Firebase Realtime Database
 - Swift UI
+- Flask
 - Langchain: Used for multiple LLM features like sentiment analysis and dynamic prompts.
 - Heroku: Scalable backend hosting.
 

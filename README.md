@@ -8,6 +8,7 @@ The app aims to simplify mental unloading and make journaling habit-forming. All
 
 ## Features
 - **Streaks**: Keep track of how consistent you are with your journaling. Streaks are mainly for positive reinforcement.
+- **Friends**: Add friends to keep track of their journaling. You can also send them stickers to remind them to journal.
 - **Stickers**: Send stickers to friends to encourage them to journal. All users have access to pre-designed stickers, while custom stickers are a premium feature.
 
 ## Future Scope
@@ -35,6 +36,7 @@ The app aims to simplify mental unloading and make journaling habit-forming. All
 - Firebase Auth
 - Firebase Realtime Database
 - Swift UI
+- Flask
 - Langchain: The backend for multiple LLM features like sentiment analysis and dynamic prompts.
 - Heroku for backend hosting: Backend is scalable due to the managed resources of Firebase and Heroku.
 
