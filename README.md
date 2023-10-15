@@ -1,5 +1,10 @@
 # Inkly: Your Habit-Forming Journaling App
 
+<div align="center">
+  	<img src="app/Inkly/Assets.xcassets/AppIcon.appiconset
+/AppIcon.png" height="150" width="150">
+</div>
+
 ## Overview
 Inkly is an app designed to make journaling a habit. It focuses on improving mental health, forming journaling habits, and encouraging social engagement by allowing users to remind their friends to journal. What sets Inkly apart is its ease of use; it starts with a blank page, avoiding unnecessary complexity, and offers structured prompts for those who prefer them. Although we don't have any partnerships or endorsements from mental health professionals yet, we plan to incorporate this in our premium plan.
 
