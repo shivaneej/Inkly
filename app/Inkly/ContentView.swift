@@ -5,24 +5,26 @@
 //  Created by Shivanee Jaiswal on 10/13/23.
 //
 
+import SwiftUI
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
 
 
 
 import SwiftUI
 
 struct CustomColor {
-    static let bg = Color("background")
+    static let bg = Color("journalBeige")
     static let t1 = Color("TextPrimary")
     static let t2 = Color("TextSecondary")
 }
 
-@MainActor class Prompt: ObservableObject {
-    @Published var value = "What's on your mind today..."
-}
-
 struct ContentView: View {
     @State private var selectedTab: Tab = .book
-    @StateObject var currentPrompt = Prompt()
     
     // Get rid of default tab bar
     init() {
@@ -37,14 +39,13 @@ struct ContentView: View {
                 case .person:
                     ProfileView()
                 case .book:
-                    HomeView(promptValue: $currentPrompt.value)
+                    HomeView()
                 case .pencil:
-                    PromptView(selectedTab: $selectedTab)
+                    PromptView()
                 case .envelope:
                     LogView()
                 }
             }
-            .environmentObject(currentPrompt)
             
             VStack {
                 Spacer()
