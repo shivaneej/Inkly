@@ -4,7 +4,7 @@
 ### Links
 - [Devpost](https://devpost.com/software/inkly)
 - [Github Pages](https://shivaneej.github.io/Inkly/)
-- [Expo]()
+
 
 ### Motivation
 - Aims to make journaling habit-forming and simplify the process of mental unloading. 
@@ -46,7 +46,7 @@
 - Gunicorn
 
 ### Demos
-[Youtube Link]()
+[Youtube Link](https://youtu.be/HvIQTvkgexg)
 
 ### Contributors
 - Jaiswal, Shivanee (sjaiswal45@gatech.edu)

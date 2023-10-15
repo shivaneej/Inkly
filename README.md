@@ -16,7 +16,7 @@ Inkly is an app designed to make journaling easy to start, easy to do, and easy 
 ## Links
 - [Devpost](https://devpost.com/software/inkly)
 - [Github Pages](https://shivaneej.github.io/Inkly/)
-- [Expo]()
+
 
 ## Motivation
 The app aims to simplify mental unloading and make journaling habit-forming. All team members felt that journaling often turns into a chore; Inkly aims to turn it into a more enjoyable experience. The added social element not only makes it easier for friends to keep track of their journaling, but also provides positive reinforcement through stickers and leverages network effects to keep users engaged.
@@ -63,7 +63,7 @@ The app aims to simplify mental unloading and make journaling habit-forming. All
 - Data privacy is maintained; none of the journaling activities are shared outside the app.
 
 ## Demos
-[Youtube Link]()
+[Youtube Link](https://youtu.be/HvIQTvkgexg)
 
 ## Contributors
 - [Shivanee Jaiswal](mailto:sjaiswal45@gatech.edu)
