@@ -1,123 +1,41 @@
----
-layout: default
----
+### What is the App About?
+- A journaling app designed to build and maintain the habit of journaling with a focus on mental health.
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+### Motivation
+- Aims to make journaling habit-forming and simplify the process of mental unloading. 
+- Adds a social element by allowing you to remind friends to journal.
 
-[Link to another page](./another-page.html).
+### Main Focus
+- Mental Health
+- Habit Formation
+- Social Engagement
 
-There should be whitespace between paragraphs.
+### Features
+- **Streaks**: Track your journaling streaks.
+- **Sticks**: Send stickers to friends to remind them to journal.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+### Future Scope
+- Implement LLM to predict user mood over time.
+- Allow gradual removal of stickers from profiles.
 
-# Header 1
+### Architecture
+- Built with Swift UI, backend on Firebase.
+- Authentication via Firebase Authentication.
+- Utilizes Langchain and GPT-3.5 Turbo for dynamic journaling prompts.
+- Backend hosted on Heroku.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+### Technologies Used
+- Firebase Auth
+- Firebase Realtime Database
+- Swift UI
+- Langchain
+- Heroku
 
-## Header 2
+### Demos
+(TBD)
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+### Contributors
+- Jaiswal, Shivanee (sjaiswal45@gatech.edu)
+- Garg, Tanya (tgarg40@gatech.edu)
+- Florea, Alexandru (aflorea6@gatech.edu)
+- Pai, Pratiksha (ppai33@gatech.edu)
