@@ -1,3 +1,7 @@
+<div align="center">
+  	<img src="https://github.com/shivaneej/Inkly/blob/main/app/Inkly/Assets.xcassets/AppIcon.appiconset/AppIcon.png" height="150" width="150">
+</div>
+
 ### What is the App About?
 - Inkly is a journaling app designed to build and maintain the habit of journaling with a focus on mental health. Ease of use is a distinguishing feature; the app starts with a blank canvas and offers structured prompts as needed.
 
