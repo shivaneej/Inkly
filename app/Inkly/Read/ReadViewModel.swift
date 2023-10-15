@@ -90,6 +90,26 @@ class ReadViewModel: ObservableObject{
             }
         }
     }
+    
+    func fetchUserStickers(uid: String, completion: @escaping ([String]?) -> Void) {
+        // Reference to the "stats" node for the specified user
+        let stickerRef = ref.child("users").child(uid).child("stickers")
+        
+        stickerRef.observeSingleEvent(of: .value) { snapshot, error in
+            if let error = error {
+                print("Error fetching user stickers: \(error)")
+                completion(nil)
+                return
+            }
+            
+            if let stickers = snapshot.value as? [String] {
+                print("Fetched stickers \(stickers)")
+                completion(stickers)
+            } else {
+                completion(nil)
+            }
+        }
+    }
 
 }
 
