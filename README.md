@@ -1,6 +1,9 @@
 # Inkly: Your Habit-Forming Journaling App
 
-![App Icon](Inkly/app/Inkly/Assets.xcassets/AppIcon.appiconset/AppIcon.png)
+<div align="center">
+  	<img src="https://github.com/shivaneej/Inkly/blob/main/app/Inkly/Assets.xcassets/AppIcon.appiconset/AppIcon.png" height="150" width="150">
+</div>
+
 
 
 
