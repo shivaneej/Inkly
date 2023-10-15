@@ -13,6 +13,7 @@ class WriteViewModel: ObservableObject{
     
     private let ref = Database.database().reference()
     
+    
     func pushDataToDatabase(_ content: String, _ date: Date,_ uid: String, _ prompt: String, _ key: String) {
         
         let dateFormatter = DateFormatter()
@@ -24,15 +25,29 @@ class WriteViewModel: ObservableObject{
             "answer": content,
             "question": prompt
         ]
+                
+        
         
         let userRef = ref.child("users").child(uid)
         let dailyEntriesRef = userRef.child("dailyEntries").child(dateString)
         
         dailyEntriesRef.child(key).setValue(entry)
         updateStats(uid: uid)
+        updateUserName(uid:uid)
 
     }
-    
+        private func updateUserName(uid: String) {
+            let authViewModel = AuthViewModel()
+            authViewModel.getDisplayName { displayName in
+                    if let displayName = displayName {
+                        let userStatsRef = self.ref.child("users").child(uid).child("userInfo")
+                        userStatsRef.setValue(["username": displayName])
+                    } else {
+                        // Handle the case where the display name is not found or the user is not signed in
+                    }
+                }
+        }
+
     private func updateStats(uid: String) {
         // Reference to the user's stats node
         let userStatsRef = ref.child("users").child(uid).child("stats")
