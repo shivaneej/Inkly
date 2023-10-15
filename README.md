@@ -1,6 +1,7 @@
 # Inkly: Your Habit-Forming Journaling App
 
-![Image Alt Text]["app/Inkly/Assets.xcassets/AppIcon.appiconset/AppIcon.png"]
+![App Icon](Inkly/app/Inkly/Assets.xcassets/AppIcon.appiconset/AppIcon.png)
+
 
 
 
