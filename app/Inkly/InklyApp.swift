@@ -26,7 +26,7 @@ struct InklyApp: App {
             WindowGroup {
                 NavigationView {
                     if authViewModel.isSignedIn {
-                        ContentView().environmentObject(authViewModel)
+                        ContentView()
 //                            .navigationBarItems(trailing: Button(action: {
 //                                authViewModel.signOut()
 //                            }) {
