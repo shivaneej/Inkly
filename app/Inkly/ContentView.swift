@@ -40,8 +40,10 @@ struct ContentView: View {
                     HomeView(promptValue: $currentPrompt.value)
                 case .pencil:
                     PromptView(selectedTab: $selectedTab)
-                case .envelope:
-                    LogView()
+//                case .envelope:
+                case .paintpalette:
+//                    LogView()
+                    StickersView()
                 }
             }
             .environmentObject(currentPrompt)

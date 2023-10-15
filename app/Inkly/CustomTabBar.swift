@@ -11,7 +11,7 @@ enum Tab: String, CaseIterable {
     case person
     case book
     case pencil
-    case envelope
+    case paintpalette
 }
 
 struct CustomTabBar: View {
@@ -22,7 +22,7 @@ struct CustomTabBar: View {
             selectedTab.rawValue + ".fill"
         case .pencil:
             selectedTab.rawValue
-        case .envelope:
+        case .paintpalette:
             selectedTab.rawValue + ".fill"
         case .book:
             selectedTab.rawValue + ".fill"

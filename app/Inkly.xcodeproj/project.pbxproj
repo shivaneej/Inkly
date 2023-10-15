@@ -44,6 +44,7 @@
 		634F89CB2ADA3E8600F7CB3B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F89CA2ADA3E8600F7CB3B /* AuthViewModel.swift */; };
 		634F89CE2ADA40D200F7CB3B /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F89CD2ADA40D200F7CB3B /* Application.swift */; };
 		634F89D12ADA421A00F7CB3B /* GoogleSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F89D02ADA421A00F7CB3B /* GoogleSignUpView.swift */; };
+		637CB4462ADBA65F00FC4E73 /* StickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CB4452ADBA65F00FC4E73 /* StickersView.swift */; };
 		638AADF22ADB0A160049FD50 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638AADF12ADB0A160049FD50 /* CustomTabBar.swift */; };
 		638AADF42ADB0A6A0049FD50 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638AADF32ADB0A6A0049FD50 /* HomeView.swift */; };
 		638AADF62ADB0AA10049FD50 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638AADF52ADB0AA10049FD50 /* LogView.swift */; };
@@ -68,6 +69,7 @@
 		634F89CA2ADA3E8600F7CB3B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		634F89CD2ADA40D200F7CB3B /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		634F89D02ADA421A00F7CB3B /* GoogleSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignUpView.swift; sourceTree = "<group>"; };
+		637CB4452ADBA65F00FC4E73 /* StickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickersView.swift; sourceTree = "<group>"; };
 		638AADF12ADB0A160049FD50 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		638AADF32ADB0A6A0049FD50 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		638AADF52ADB0AA10049FD50 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				638AADF72ADB0AB60049FD50 /* ProfileView.swift */,
 				638AADF92ADB0ACA0049FD50 /* PromptView.swift */,
 				63A590BB2ADB6877003EA8E4 /* FriendsView.swift */,
+				637CB4452ADBA65F00FC4E73 /* StickersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				634F89CB2ADA3E8600F7CB3B /* AuthViewModel.swift in Sources */,
 				634F89AD2ADA340F00F7CB3B /* ContentView.swift in Sources */,
 				63A590BA2ADB67C6003EA8E4 /* ReadViewModel.swift in Sources */,
+				637CB4462ADBA65F00FC4E73 /* StickersView.swift in Sources */,
 				634F89D12ADA421A00F7CB3B /* GoogleSignUpView.swift in Sources */,
 				638AADF62ADB0AA10049FD50 /* LogView.swift in Sources */,
 				2BC96E5C2ADB2B1A005EA8A9 /* WriteModel.swift in Sources */,
