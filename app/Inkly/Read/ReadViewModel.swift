@@ -25,25 +25,6 @@ class ReadViewModel: ObservableObject{
     @Published var dateEntries: [DateEntry] = []
     private let ref = Database.database().reference()
     
-    
-//    func readDataFromDatabase(uid: String, date: String, completion: @escaping ([String: [String: String]]) -> Void) {
-//        // Reference to the "dailyEntries" node for the specified user and date
-//        let dailyEntriesRef = ref.child("users").child(uid).child("dailyEntries").child(date)
-//        
-//        dailyEntriesRef.observeSingleEvent(of: .value) { snapshot, error in
-//            if let error = error {
-//                print("Error reading data from the database: \(error)")
-//                completion([:])
-//                return
-//            }
-//            
-//            if let entriesDict = snapshot.value as? [String: [String: String]] {
-//                completion(entriesDict)
-//            } else {
-//                completion([:])
-//            }
-//        }
-//    }
     func readDataFromDatabase(uid: String, completion: @escaping () -> Void) {
             let dailyEntriesRef = ref.child("users").child(uid).child("dailyEntries")
 
@@ -110,6 +91,27 @@ class ReadViewModel: ObservableObject{
             }
         }
     }
+    
+    func fetchLatestEntry(for uid: String, completion: @escaping (String?) -> Void) {
+            let dailyEntriesRef = ref.child("users").child(uid).child("dailyEntries")
+            
+            dailyEntriesRef.observeSingleEvent(of: .value) { snapshot in
+                guard let entries = snapshot.value as? [String: [String: [String: String]]] else {
+                    completion(nil)
+                    return
+                }
+                
+                let latestDate = entries.keys.sorted().last
+                if let date = latestDate, let prompts = entries[date] {
+                    let prompt1Answer = prompts["prompt1"]?["answer"] ?? ""
+                    let prompt2Answer = prompts["prompt2"]?["answer"] ?? ""
+                    let combined = prompt1Answer + " " + prompt2Answer
+                    completion(combined)
+                } else {
+                    completion(nil)
+                }
+            }
+        }
 
 }
 
